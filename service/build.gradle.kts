@@ -1,13 +1,12 @@
 plugins {
     application
     kotlin("jvm")
-    id("org.springframework.boot") version "3.2.0-RC1"
-    id("org.springframework.boot.aot") version "3.2.0-RC1"
+    id("org.springframework.boot") version "3.1.5"
+    id("org.springframework.boot.aot") version "3.1.5"
 }
 
 repositories {
     mavenCentral()
-    maven("https://repo.spring.io/milestone/")
 }
 
 springBoot {
@@ -15,7 +14,7 @@ springBoot {
 }
 
 dependencies {
-    implementation(platform("org.springframework.boot:spring-boot-dependencies:3.2.0-RC1"))
+    implementation(platform("org.springframework.boot:spring-boot-dependencies:3.1.5"))
 
     implementation("org.springframework.boot", "spring-boot-starter")
 
